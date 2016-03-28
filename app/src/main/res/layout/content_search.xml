@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+    <FrameLayout
+        android:id="@+id/LocationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="startUpdatesButtonHandler"
+        android:background="#e1e1e1">
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/LocationPlaceHolder"
+            android:layout_marginTop="15dp"
+            android:textColorHint="#727272"
+            android:hint="Use current location" />
+        <ImageButton
+            android:id="@+id/mStartUpdatesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/definelocation"
+            android:paddingRight="15dp"
+            android:paddingTop="8dp"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_gravity="right" />
+
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/LocationSearchFrame"
+        android:layout_below="@+id/LocationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="#fff">
+
+        <ImageView
+            android:id="@+id/SearchImageView"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/search"/>
+
+        <AutoCompleteTextView
+            android:layout_marginLeft="40dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/autocomplete"
+            android:dropDownHorizontalOffset="-20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:dropDownVerticalOffset="15dp"
+            android:background="@android:color/transparent"
+            android:textColorHint="#727272"
+            android:textColor="#727272"
+            android:hint="Start typing location's name" />
+
+
+
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/latitude_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+
+
+    <TextView
+        android:id="@+id/longitude_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/last_update_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>

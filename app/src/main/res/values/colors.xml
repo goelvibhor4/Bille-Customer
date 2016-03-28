@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_color">#FAA</color>
+    <color name="primary_color_dark">#AFA</color>
+    <color name="primary">#ffa500</color>
+    <color name="Toolbar">#ffa500</color>
+    <color name="primaryDark">#fff</color>
+    <color name="accent">#FFFFFF</color>
+    <color name="accentLight">#F4FF81</color>
+
+    <color name="primary_dark">#ffa500</color>
+    <color name="primary_darker">#ffa500</color>
+    <color name="primaryTextColor">#212121</color>
+    <color name="secondaryTextColor">#727272</color>
+
+
+    <color name="GreyBackgroundColour">#E1E1E1</color>
+    <color name="statusBarColor_1">#ffc400</color>
+    <color name="statusBarColor_2">#ffc400</color>
+    <color name="statusBarColor">#ffc400</color>
+    <color name="windowBackground">#ffc400</color>
+
+
+</resources>

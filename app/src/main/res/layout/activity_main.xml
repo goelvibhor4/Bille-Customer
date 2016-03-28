@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="50dp"
+    >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        tools:context=".MyActivity">
+
+
+        <TextView
+                    android:id="@+id/latitude_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+
+
+                <TextView
+                    android:id="@+id/longitude_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/last_update_time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                  />
+
+
+    <FrameLayout
+        android:id="@+id/TitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#FFF"
+        android:onClick="click"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/locationpointer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="5dp"
+            android:src="@drawable/pointer1"
+            />
+        <TextView
+            android:id="@+id/location"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:textColor="#fe969292"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Fetching location.."
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:typeface="serif"/>
+
+
+
+        <ImageView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="340dp"
+            android:src="@drawable/right3"
+            />
+
+
+    </FrameLayout>
+
+            <view
+        android:layout_below="@+id/TitleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        class="android.support.v7.widget.RecyclerView"
+        android:id="@+id/fourth_recycler_view"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+</RelativeLayout>

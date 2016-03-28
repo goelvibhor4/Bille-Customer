@@ -1,0 +1,145 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="50dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <FrameLayout
+        android:id="@+id/AddCardLayout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="380dp"
+        android:background="@drawable/location">
+
+
+        <RadioGroup
+            android:id="@+id/radioGender"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/genderMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Credit"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/genderFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Debit" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Card Number"
+            android:textColor="#898585"
+            android:textSize="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="10dp"/>
+
+
+        <com.devmarvel.creditcardentry.library.CreditCardForm
+            android:id="@+id/just_card_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="5dp"
+            app:include_exp="false"
+            app:include_helper="false"
+            app:include_security="false"
+            app:include_zip="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Expiry Date"
+            android:textColor="#898585"
+            android:textSize="20dp"
+            android:layout_marginTop="115dp"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/etxt_fromdate"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="145dp"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText
+            android:id="@+id/etxt_todate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:hint="MM/YY" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Name on Card"
+            android:textColor="#898585"
+            android:textSize="20dp"
+            android:layout_marginTop="185dp"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/addname"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="215dp"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Card Label"
+            android:textColor="#898585"
+            android:textSize="20dp"
+            android:layout_marginTop="255dp"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/cardlabel"
+            android:layout_width="170dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="290dp"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="290dp"
+            android:layout_height="45dp"
+            android:text="ADD"
+            android:textSize="25dp"
+            android:background="#f9f521"/>
+    </FrameLayout>
+</RelativeLayout>
+
+
+</ScrollView>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/blurred"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:facebook="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="85dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+
+        <!--  Name Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+            android:textColorHint="@color/accent"
+            android:textColor="@color/accent"
+            >
+            <EditText android:id="@+id/input_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+                android:textColorHint="@color/accent"
+                android:textColor="@color/accent"
+                android:hint="Name" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Email Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+            android:textColorHint="@color/accent"
+            android:textColor="@color/accent"
+            >
+            <EditText android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+                android:textColorHint="@color/accent"
+                android:textColor="@color/accent"
+                android:hint="Email" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Phone Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+            android:textColorHint="@color/accent"
+            android:textColor="@color/accent"
+            >
+            <EditText android:id="@+id/input_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+                android:textColorHint="@color/accent"
+                android:textColor="@color/accent"
+                android:inputType="number"
+                android:hint="Phone" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Password Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+            android:textColorHint="@color/accent"
+            android:textColor="@color/accent"
+            >
+            <EditText android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+                android:textColorHint="@color/accent"
+                android:textColor="@color/accent"
+                android:hint="Password"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Signup Button -->
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_signup"
+            android:layout_width="fill_parent"
+            android:textColor="@color/accent"
+            android:background="@color/primary_dark"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Create Account"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_weight="1"
+                android:background="#fff" />
+
+            <TextView android:id="@+id/OR"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/accent"
+                android:text="OR"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="20dip"/>
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_weight="1"
+                android:background="#fff" />
+
+        </LinearLayout>
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/fb_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            facebook:login_text="CONNECT WITH FACEBOOK"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:padding="12dp"
+            style="@style/FacebookLoginButton"
+            />
+
+
+
+        <TextView android:id="@+id/link_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:longClickable="false"
+            android:text="Already a member? Login"
+            android:gravity="center"
+            android:textColor="@color/accent"
+
+            android:textSize="16dip"/>
+
+    </LinearLayout>
+</ScrollView>

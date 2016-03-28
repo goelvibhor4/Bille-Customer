@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="100dp"
+    android:background="@drawable/blurred"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+        <TextView android:id="@+id/or"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="ENTER OTP SENT TO YOUR MOBILE NO."
+            android:textColor="@color/accent"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="18dp"/>
+
+        <!-- Phone Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:textColorHint="@color/accent"
+            android:textColor="@color/accent"
+
+
+            app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/input_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColorHint="@color/accent"
+                android:textColor="@color/accent"
+                android:hint="ENTER OTP HERE" />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <!-- Signup Button -->
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_inside"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:textColor="@color/accent"
+            android:background="@color/primary"
+            android:text="GET INSIDE"/>
+
+
+    <TextView
+        android:layout_marginTop="80dp"
+        android:id="@+id/timerholder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/accent"
+        android:text="Didn't get the code? Ask us again"
+        android:gravity="center"
+        android:textSize="16dip" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/timer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/accent"
+        android:layout_marginBottom="20dp"
+        android:text="Timer"
+        android:gravity="center"
+        android:textSize="16dip" />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/resend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="24dp"
+        android:padding="12dp"
+        android:textColor="@color/accent"
+        android:background="@color/primary"
+        android:text="resend"/>
+
+</RelativeLayout>
+    </LinearLayout>

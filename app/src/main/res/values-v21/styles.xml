@@ -1,0 +1,15 @@
+<resources>z>
+
+    <style name="StatusTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/statusBarColor_2</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlNormal">@color/accent</item>
+        <item name="colorControlActivated">@color/accent</item>
+        <item name="colorControlHighlight">@color/accent</item>
+        <item name="android:textColorHint">@color/primary</item>
+        <item name="android:statusBarColor">@color/statusBarColor</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+    </style>
+</resources>

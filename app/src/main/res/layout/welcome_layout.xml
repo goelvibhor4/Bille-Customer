@@ -1,0 +1,88 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/blurred"
+    android:scaleType="centerCrop">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/button_layout"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/pager"
+        android:layout_height="fill_parent"
+        android:background="@drawable/blurredoverlay"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/circles"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            >
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/circles"
+            android:orientation="horizontal">
+
+
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="6.25dp"
+                android:background="@drawable/welcome_buttons"
+                android:text="Sign In"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18dp"
+
+                />
+            <View
+                android:layout_width="1dip"
+                android:layout_height="40dp"
+                android:background="#FFF"
+                />
+            <Button
+                android:id="@+id/register"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6.25dp"
+                android:textColor="@color/accent"
+                android:background="@drawable/welcome_buttons"
+                android:layout_marginRight="25dp"
+                android:text="Register"
+                android:textSize="18dp"
+                android:textAllCaps="false"
+
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

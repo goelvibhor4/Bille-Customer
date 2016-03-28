@@ -1,0 +1,158 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="ABOUT BILLE"
+        android:id="@+id/textView2"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Bille is a mobile payment solution. We are creating one tap payment solutions where user can pay on just a single tap at Restaurants. Also Restaurants can easily make bills and receive money instantly."
+        android:id="@+id/textView3"
+        android:textColor="@color/secondaryTextColor"
+        android:layout_below="@+id/textView2"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Follow Us :"
+        android:id="@+id/textView9"
+        android:layout_marginTop="295dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonFacebook"
+        android:src="@drawable/facebook"
+        android:background="#00ffffff"
+        android:layout_marginTop="280dp"
+        android:layout_marginLeft="120dp"
+
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonTwitter"
+        android:src="@drawable/twitter"
+        android:background="#00ffffff"
+        android:layout_marginTop="280dp"
+        android:layout_marginLeft="180dp"
+
+        />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonInstagram"
+        android:src="@drawable/instagram"
+        android:background="#00ffffff"
+        android:layout_marginTop="280dp"
+        android:layout_marginLeft="240dp"
+
+        />
+    <FrameLayout
+        android:id="@+id/termsandcondtions"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFF"
+        android:layout_above="@+id/contactus"
+        android:onClick="click"
+        android:clickable="true" >
+
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="18dp"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:textColor="#fe969292"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Terms and Conditions"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:typeface="serif"/>
+
+
+
+        <ImageView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="330dp"
+            android:src="@drawable/right3"
+            />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/contactus"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFF"
+        android:layout_alignParentBottom="true"
+        android:onClick="click"
+        android:layout_marginTop="5dp"
+        android:clickable="true" >
+
+
+        <TextView
+            android:id="@+id/location2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="18dp"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:textColor="#fe969292"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Contact Us"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:typeface="serif"/>
+
+
+
+        <ImageView
+            android:id="@+id/next2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="330dp"
+            android:src="@drawable/right3"
+            />
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

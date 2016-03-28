@@ -1,0 +1,158 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="50dp"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+        <RelativeLayout
+            android:id="@+id/AddCardLayout"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/location">
+
+
+            <LinearLayout
+                android:id="@+id/footprintholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:weightSum="5"
+                >
+                <ImageView
+                    android:id="@+id/footprint1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/footprintgrey" />
+
+                <ImageView
+                    android:id="@+id/footprint2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+
+                    android:src="@drawable/footprintgrey" />
+
+                <ImageView
+                    android:id="@+id/footprint3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+
+                    android:src="@drawable/footprintgrey" />
+
+                <ImageView
+                    android:id="@+id/footprint4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+
+                    android:src="@drawable/footprintgrey" />
+
+                <ImageView
+                    android:id="@+id/footprint5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/footprintyellow" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/footprintholder3"
+                android:layout_below="@+id/footprintholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/footprint42"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/up" />
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/footprintholder2"
+                android:layout_below="@+id/footprintholder3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="20dp"
+                android:weightSum="5">
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Earn a footprint worth 10% of your bill"
+                android:id="@+id/textView10"
+                android:textSize="18dp"
+                android:layout_below="@+id/footprintholder3"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@+id/textView10"
+                android:text="every time you pay using Bille."
+                android:textSize="18dp"
+                android:layout_centerHorizontal="true" />
+
+   <View
+    android:layout_width="fill_parent"
+       android:layout_margin="10dp"
+    android:layout_below="@+id/textView11"
+       android:layout_marginLeft="500dp"
+       android:gravity="center"
+       android:layout_height="2dip"
+    android:background="#E1E1E1" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_below="@+id/textView11"
+                android:text="Redeem everything on your 5th meal"
+                android:id="@+id/textView12"
+                android:textSize="18dp"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

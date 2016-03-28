@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mainlayout"
+
+        >
+
+        <android.support.v7.widget.CardView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/detailscard"
+            android:layout_margin="5dp">
+
+            <LinearLayout android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearcustname"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:textSize="18sp"
+                        android:textColor="@color/primaryTextColor"
+                        android:textAllCaps="true"
+                        android:id="@+id/textViewRestaurantName"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="0.3"/>
+
+
+                    <ImageView
+                        android:id="@+id/clock"
+                        android:src="@drawable/clock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="125dp"
+                        android:textColor="#000"/>
+                    <TextView
+                        android:id="@+id/dateholder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/primaryTextColor"
+                        android:text="Date"
+                        android:layout_weight="0.3"/>
+
+                </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/belowfirst"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearcustname"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:textSize="15sp"
+                    android:textColor="@color/secondaryTextColor"
+                    android:id="@+id/BStextViewlocation"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/BillIdLinearLayout"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/belowfirst"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bill Id :"
+                    android:textSize="15sp"
+                    android:textColor="@color/primaryTextColor"
+                    android:id="@+id/BSTextViewBillHolder"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:textSize="15sp"
+                    android:textColor="@color/secondaryTextColor"
+                    android:id="@+id/BSTextViewBillId"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/statusLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/BillIdLinearLayout"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                >
+
+                <ImageView
+                    android:id="@+id/statusimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/paidstatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Paid/Unpaid"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/secondaryTextColor"
+                    />
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_below="@id/detailscard">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/quickbill"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="custom bill"/>
+                <view
+                    android:id="@+id/recycler_bill_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    class="android.support.v7.widget.RecyclerView"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="5dp"
+                    android:layout_above="@+id/totalamtcard"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/secondaryTextColor"
+                    android:layout_below="@+id/recycler_bill_desc"
+                    android:layout_marginLeft="2dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/totalamtcard"
+                    android:layout_toEndOf="@+id/recycler_bill_desc"
+                    android:layout_toRightOf="@id/recycler_bill_desc"
+                    android:layout_margin="5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="10dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SUBTOTAL   :"
+                            android:textColor="@color/primaryTextColor"
+                            android:id="@+id/subtotalholder"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold"
+                            />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Rs"
+                            android:layout_marginLeft="175dp"
+                            android:layout_toRightOf="@+id/subtotalholder"
+                            android:textColor="@color/primaryTextColor"
+                            android:id="@+id/subtotalamount" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="40dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DISCOUNT    :"
+                            android:textColor="@color/primaryTextColor"
+                            android:id="@+id/discountholder"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/discountValue"
+                            android:layout_marginLeft="175dp"
+                            android:textColor="@color/primaryTextColor"
+                            android:text="@string/Rs"
+                            android:layout_toRightOf="@id/discountholder"
+
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="70dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TOTAL           :"
+                            android:textColor="@color/primaryTextColor"
+                            android:id="@+id/totalamountholder"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/totalamountdata"
+                            android:layout_marginLeft="175dp"
+                            android:layout_toRightOf="@+id/totalamountholder"
+                            android:text="@string/Rs"
+                            android:textColor="@color/primaryTextColor"
+                            />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

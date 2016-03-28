@@ -1,0 +1,149 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    android:orientation="vertical"
+    tools:context=".BaseActivity">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_weight=".70"
+                android:id="@+id/tl"
+                android:background="#e1e1e1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_view_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs."
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_view_transaction_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Transaction id : " />
+            </LinearLayout>
+            <ProgressBar
+                android:layout_marginTop="30dp"
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_marginTop="120dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_one_click_payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingBottom="10dp"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/button_one_click_payment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="One Click Payment"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_stored_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingBottom="10dp"
+                    >
+
+                    <Button
+                        android:id="@+id/button_stored_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Stored card"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_netbanking"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingBottom="10dp"
+
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/button_netbanking"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/net_banking"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_credit_debit_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingBottom="10dp"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/button_credit_debit_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Credit / Debit card"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_verify_api"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingBottom="10dp"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/button_verify_api"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Verify Api"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+</LinearLayout>

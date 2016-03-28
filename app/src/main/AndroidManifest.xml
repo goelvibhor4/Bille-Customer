@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="in.bille.app" >
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <permission
+        android:name="in.bille.app.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <provider
+        android:name="com.facebook.FacebookContentProvider"
+        android:authorities="com.facebook.app.FacebookContentProvider144278292599462"
+        android:exported="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher2"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon" >
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".SplashMain"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PhoneForFacebook"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Search"
+            android:label="@string/title_activity_search"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Offers"
+            android:label="@string/title_activity_search"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Drawer_activity"
+            android:label="@string/title_activity_search"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Restaurant"
+            android:label="@string/title_activity_restaurant"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Register"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".CustomerLogin"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".TermsAndConditionsSlide"
+            android:excludeFromRecents="true"
+            android:taskAffinity=""
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sliding.Light" />
+        <activity android:name=".TermsAndConditions"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".PaymentsMain"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".Scrolling"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".MyBills"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".BillSummary"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".PaymentConfirmation"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+
+            android:screenOrientation="portrait">
+        </activity>
+        <receiver
+            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name=".GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+
+                <category android:name="in.bille.app.pushnotifications" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".GcmIntentService" />
+
+        <activity android:name=".SearchMain"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".EditProfile"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".AboutUs"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".BillDescription"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+
+            android:screenOrientation="portrait">
+            <intent-filter >
+                <action android:name="sdkui.intent.action.Launch" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".ForgotPassword"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".OtpVerification"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".WelcomeScreen"
+
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".AddPaymentCard"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".Cards"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- SMS Receiver -->
+
+        <receiver android:name=".IncomingSms" >
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="26a4dd67be15ccbf395d86e4e662a0bda241aaaf" />
+    </application>
+
+</manifest>

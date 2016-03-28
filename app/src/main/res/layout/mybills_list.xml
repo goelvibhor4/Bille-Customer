@@ -1,0 +1,403 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:paddingLeft="0dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/Datelayout">
+
+            <ImageView
+                android:id="@+id/clock"
+                android:src="@drawable/clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primaryTextColor"
+
+
+                />
+            <TextView
+                android:id="@+id/Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primaryTextColor"
+                android:layout_marginLeft="5dp"
+                android:text="Date"
+
+                />
+            <ImageView
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:src="@drawable/next"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:weightSum="1"
+            android:id="@+id/linearLayout">
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primaryTextColor"
+                android:text="Restaurant Name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/linearLayout"
+            android:layout_marginTop="3dp"
+            android:weightSum="1"
+            android:id="@+id/Addresslayout">
+
+
+            <TextView
+                android:id="@+id/adressplaceholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondaryTextColor"
+                android:text="Address"
+                android:layout_marginLeft="5dp"
+
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/orderidlinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Addresslayout"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/orderidplaceholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primaryTextColor"
+                android:text="BILL ID:"
+                android:layout_marginLeft="5dp"
+                />
+
+            <TextView
+                android:id="@+id/customerorderid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="order id"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/secondaryTextColor"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/statusLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/orderidlinear"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            >
+
+            <ImageView
+                android:id="@+id/statusimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                />
+
+            <TextView
+                android:id="@+id/paidstatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Paid/Unpaid"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/secondaryTextColor"
+                />
+
+        </LinearLayout>
+        <TableRow
+            android:id="@+id/hr"
+            android:layout_below="@+id/statusLinear"
+            android:layout_marginTop="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/secondaryTextColor"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/hr"
+            android:id="@+id/Subtotallayout">
+
+
+            <TextView
+                android:id="@+id/subtotalplaceholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primaryTextColor"
+                android:text="SUBTOTAL :"
+                android:layout_marginLeft="5dp"
+                android:textSize="17dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="normal"
+                />
+
+            <TextView
+                android:id="@+id/subtotaldata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondaryTextColor"
+                android:layout_marginRight="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="Subtotalamount"
+
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/Subtotallayout"
+            android:layout_marginTop="5dp"
+            android:weightSum="1"
+            android:id="@+id/discountlayout">
+
+
+            <TextView
+                android:id="@+id/DiscountHolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primaryTextColor"
+                android:text="DISCOUNT :"
+                android:layout_marginLeft="5dp"
+                android:textSize="17dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="normal"
+                />
+
+            <TextView
+                android:id="@+id/discountdata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondaryTextColor"
+                android:layout_marginRight="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="dicountdata"
+
+                />
+
+        </RelativeLayout>
+        <TableRow
+            android:id="@+id/hr2"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/discountlayout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/secondaryTextColor"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/hr2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"
+            android:weightSum="1"
+            android:id="@+id/totalamountlayout">
+
+
+            <TextView
+                android:id="@+id/totalamountholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primaryTextColor"
+                android:text="Total Amount :"
+                android:layout_marginLeft="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/totalamountdata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondaryTextColor"
+                android:layout_marginRight="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="toalamountdata"
+
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/location"
+                android:layout_marginLeft="25dp"
+                android:textColor="#000"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/orderid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="order id"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/secondaryTextColor"
+                android:visibility="gone"
+                />
+
+
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/orderitems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/itemsquantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/min_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/tnc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+
+            />
+
+        <TextView
+            android:id="@+id/sliderstring"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+
+            />
+
+        <TextView
+            android:id="@+id/rssymbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primaryTextColor"
+            android:text="@string/Rs"
+            android:textSize="17dp"
+            android:layout_alignBottom="@+id/linearLayout"
+            android:layout_marginLeft="240dp"/>
+
+        <TextView
+            android:id="@+id/totalamount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:textSize="17dp"
+            android:textColor="@color/primaryTextColor"
+            android:text="Total amount"
+            android:layout_alignBottom="@+id/linearLayout"
+            />
+
+
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
